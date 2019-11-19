@@ -9,24 +9,17 @@ template:
     "tools-hackathon-2019-typescript-introduction"
 before:
   - type: createIssue
-    title: Welcome to the exercise regarding "tools-hackathon-2019-typescript-introduction" - enjoy the show
-    body: new-issue.md
+    title: >-
+      Welcome to the exercise regarding
+      "tools-hackathon-2019-typescript-introduction"
+    body: Enjoy the Show
+    action_id: akshay1
 steps:
   - title: Install Git
-    description: You can download Git from https://git-scm.com/downloads
-    event: issues.assigned
+    description: 'You can download Git from https://git-scm.com/downloads'
+    event: issues.closed
     link: '{{ repoUrl }}'
     actions:
-      - type: closeIssue
-  - title: Install NodeJS
-    description: Download the NodeJS Runtime Environment from https://nodejs.org/
-    event: issues.assigned
-    link: '{{ repoUrl }}'
-    actions:
-      - type: closeIssue
-  - title: Install Code Editor / IDE preferrably VS Code
-    description: Download VS Code from https://code.visualstudio.com/insiders/
-    event: issues.assigned
-    link: '{{ repoUrl }}'
-    actions:
-      - type: closeIssue
+      - type: createIssue
+        title: Install Git  
+        body: Install Git from https://git-scm.com/downloads
