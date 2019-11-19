@@ -9,7 +9,7 @@ template:
     "tools-hackathon-2019-typescript-introduction"
 before:
   - type: createIssue
-    title: Welcome to the exercise regarding "tools-hackathon-2019-typescript-introduction"!
+    title: Welcome to the exercise regarding "tools-hackathon-2019-typescript-introduction" - enjoy the show
     body: new-issue.md
 steps:
   - title: Install Git
