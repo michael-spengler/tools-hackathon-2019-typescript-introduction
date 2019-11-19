@@ -1,16 +1,31 @@
 title: tools-hackathon-2019-typescript-introduction
-tagline: A brand new course on Learning Lab
+tagline: Typescript Introduction for Newbies in the context of the 2019 Tools Hackathon
 description: Typescript Introduction for Newbies in the context of the 2019 Tools Hackathon
 template:
   repo: tools-hackathon-2019-typescript-introduction-template
-  name: tools-hackathon-2019-typescript-introduction
+  name: tools-hackathon-2019-typescript-introduction-exercise
+  description: >-
+    Repository for exploring the Learning Lab course
+    "tools-hackathon-2019-typescript-introduction"
 before:
   - type: createIssue
-    title: Welcome!
+    title: Welcome to the exercise regarding "tools-hackathon-2019-typescript-introduction"!
     body: new-issue.md
 steps:
-  - title: First step
-    description: The first step in your course
+  - title: Install Git
+    description: You can download Git from https://git-scm.com/downloads
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
+  - title: Install NodeJS
+    description: Download the NodeJS Runtime Environment from https://nodejs.org/
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
+  - title: Install Code Editor / IDE preferrably VS Code
+    description: Download VS Code from https://code.visualstudio.com/insiders/
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
