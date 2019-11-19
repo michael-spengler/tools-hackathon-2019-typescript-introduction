@@ -1,0 +1,17 @@
+title: tools-hackathon-2019-typescript-introduction
+tagline: A brand new course on Learning Lab
+description: Typescript Introduction for Newbies in the context of the 2019 Tools Hackathon
+template:
+  repo: tools-hackathon-2019-typescript-introduction-template
+  name: tools-hackathon-2019-typescript-introduction
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
